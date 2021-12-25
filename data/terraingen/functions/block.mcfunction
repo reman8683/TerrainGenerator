@@ -3,8 +3,8 @@ execute store result score @s perlinx run data get entity @s Pos[0] 200
 execute store result score @s perliny run data get entity @s Pos[2] 200
 
 #offsets
-scoreboard players add @s perlinx 621000123
-scoreboard players add @s perliny 71234002
+scoreboard players operation @s perlinx += seedx seed
+scoreboard players operation @s perlinx += seedx seed
 
 #generate noise
 function #terraingen:noise
@@ -25,10 +25,8 @@ kill @e[tag=PlaceBlock]
 #move to next block
 tp @s ~1 ~ ~
 
-#test if out of bounds and tp to next row or kill armorstand
-
 execute store result score @s perlinx run data get entity @s Pos[0] 1
 execute store result score @s perliny run data get entity @s Pos[2] 1
 
-execute if score @s perlinx matches 256.. run tp @s 0 ~ ~1
 execute if score @s perliny matches 256.. run kill @s
+execute if score @s perlinx matches 256.. run tp @s 0 ~ ~1

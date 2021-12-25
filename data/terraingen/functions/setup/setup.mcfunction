@@ -36,3 +36,8 @@ scoreboard players set 3 fade 3
 scoreboard objectives add lcg dummy
 scoreboard players set 100 lcg 100
 scoreboard players set 11 lcg 11
+
+#seed
+scoreboard objectives add seed dummy
+scoreboard players set x seed 256
+scoreboard players set y seed 256
