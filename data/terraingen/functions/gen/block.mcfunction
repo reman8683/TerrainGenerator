@@ -1,7 +1,12 @@
-#get location in score
+#worldsize
+execute store result score @s perlinx run data get entity @s Pos[0] 1
+execute store result score @s perliny run data get entity @s Pos[2] 1
+
+execute if score worldsizey seed <= @s perliny run kill @s
+execute if score worldsizex seed <= @s perlinx run tp @s 0 ~ ~1
+
 execute store result score @s perlinx run data get entity @s Pos[0] 200
 execute store result score @s perliny run data get entity @s Pos[2] 200
-
 #offsets
 scoreboard players operation @s perlinx += seedx seed
 scoreboard players operation @s perlinx += seedx seed
@@ -22,9 +27,3 @@ execute at @e[tag=PlaceBlock] run fill ~ ~ ~ ~ ~ ~ grass_block
 kill @e[tag=PlaceBlock]
 
 tp @s ~1 ~ ~
-
-execute store result score @s perlinx run data get entity @s Pos[0] 1
-execute store result score @s perliny run data get entity @s Pos[2] 1
-
-execute if score worldsizey seed <= @s perliny run kill @s
-execute if score worldsizex seed <= @s perlinx run tp @s 0 ~ ~1
