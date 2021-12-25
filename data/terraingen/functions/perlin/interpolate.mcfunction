@@ -2,7 +2,7 @@
 #tellraw @a [{"text":"\nxi: "},{"color":"gold","score":{"name":"xdec","objective":"perlincalc"}},{"text":", yi: "},{"color":"gold","score":{"name":"ydec","objective":"perlincalc"}}]
 #tellraw @a [{"text":"\n1-xi: "},{"color":"gold","score":{"name":"1-xdec","objective":"perlincalc"}},{"text":", 1-yi: "},{"color":"gold","score":{"name":"1-ydec","objective":"perlincalc"}}]
 
-function perlin:perlin/fade
+function terraingen:perlin/fade
 #tellraw @a [{"text":"\nxf: "},{"color":"gold","score":{"name":"xdec","objective":"perlincalc"}},{"text":", yf: "},{"color":"gold","score":{"name":"ydec","objective":"perlincalc"}}]
 
 scoreboard players set 1-xdec perlincalc 10000
