@@ -10,7 +10,7 @@ scoreboard players operation @s perlinx += seedx seed
 function #terraingen:noise
 
 #set block at corresponding height
-summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:[PlaceBlock]} 
+summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["PlaceBlock"]} 
 execute store result entity @e[tag=PlaceBlock,limit=1] Pos[1] double 0.004 run scoreboard players get @s perlinOutput
 
 
