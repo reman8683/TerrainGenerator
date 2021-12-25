@@ -15,7 +15,7 @@ scoreboard players operation @s perlinx += seedx seed
 function #terraingen:noise
 
 summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["PlaceBlock"]} 
-execute store result entity @e[tag=PlaceBlock,limit=1] Pos[1] double 0.01 run scoreboard players get @s perlinOutput
+execute store result entity @e[tag=PlaceBlock,limit=1] Pos[1] double 0.002 run scoreboard players get @s perlinOutput
 
 
 execute at @e[tag=PlaceBlock] run fill ~ 255 ~ ~ ~1 ~ air
