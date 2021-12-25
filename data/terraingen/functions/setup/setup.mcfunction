@@ -39,5 +39,5 @@ scoreboard players set 11 lcg 11
 
 #seed
 scoreboard objectives add seed dummy
-scoreboard players set x seed 256
-scoreboard players set y seed 256
+scoreboard players set worldsizex seed 256
+scoreboard players set worldsizey seed 256
