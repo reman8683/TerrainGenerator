@@ -1,8 +1,3 @@
-#worldsize
-execute store result score perlinx seed run data get entity @s Pos[0] 1
-execute store result score perliny seed run data get entity @s Pos[2] 1
-execute if score perlinx seed >= worldsizex seed run tp @s 0 ~ ~1
-execute if score perliny seed >= worldsizey seed run kill @s
 
 execute store result score @s perlinx run data get entity @s Pos[0] 200
 execute store result score @s perliny run data get entity @s Pos[2] 200
