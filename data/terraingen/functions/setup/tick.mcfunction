@@ -1,0 +1,1 @@
+execute if entity @e[tag=perlin] run function terraingen:gen/gen_block
