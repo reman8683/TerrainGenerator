@@ -39,5 +39,8 @@ scoreboard players set 11 lcg 11
 
 #seed
 scoreboard objectives add seed dummy
+scoreboard players set sealevel seed 64
+scoreboard players set 500 seed 500
+scoreboard players operation sealevel seed *= 500 seed
 scoreboard players set worldsizex seed 256
 scoreboard players set worldsizey seed 256
