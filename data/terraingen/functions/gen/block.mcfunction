@@ -29,4 +29,4 @@ kill @e[tag=PlaceBlock]
 kill @e[tag=PlaceBlockBedrock]
 
 execute store result score @s perlinx run data get entity @s Pos[0] 1
-execute unless score perlinx seed >= worldsizex seed run tp @s ~1 ~ ~
+execute unless score @s perlinx >= worldsizex seed run tp @s ~1 ~ ~
