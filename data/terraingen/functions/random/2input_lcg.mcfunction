@@ -15,7 +15,5 @@ scoreboard players operation lcg2_xy perlincalc *= lcg2_x perlincalc
 scoreboard players operation lcg2_xy perlincalc %= 100 perlincalc
 
 function terraingen:random/lcg
-#function perlin:random/lcg
 
-#title @a actionbar {"score":{"name":"lcg2_xy","objective":"perlincalc"}}
 execute if score lcg2_xy perlincalc matches -2147483647..-1 run scoreboard players operation lcg2_xy perlincalc *= -1 perlincalc

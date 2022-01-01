@@ -3,7 +3,7 @@ scoreboard objectives add perliny dummy
 scoreboard objectives add perlincalc dummy
 scoreboard objectives add perlinOutput dummy
 
-#perlincalc numbers 20000000, 1000000, 100000, 20000, 18000, 10000, 5001, 2000,400,167,131,100,50,28,12,11,4,3,-1
+#perlincalc numbers: 20000000, 1000000, 100000, 20000, 18000, 10000, 5001, 2000,400,167,131,100,50,28,12,11,4,3,-1
 scoreboard objectives add perlincalc dummy
 scoreboard players set 2000000 perlincalc 2000000
 scoreboard players set 1000000 perlincalc 1000000
@@ -25,7 +25,7 @@ scoreboard players set 4 perlincalc 4
 scoreboard players set 3 perlincalc 3
 scoreboard players set -1 perlincalc -1
 
-#fade numbers  100000, 10000,500,3
+#fade numbers: 100000, 10000,500,3
 scoreboard objectives add fade dummy
 scoreboard players set 100000 fade 100000
 scoreboard players set 10000 fade 10000
@@ -37,7 +37,7 @@ scoreboard objectives add lcg dummy
 scoreboard players set 100 lcg 100
 scoreboard players set 11 lcg 11
 
-#seed
+#seed vars: sealevel, worldsizex, worldsizey, numbers: 500
 scoreboard objectives add seed dummy
 scoreboard players set sealevel seed 64
 scoreboard players set 500 seed 500

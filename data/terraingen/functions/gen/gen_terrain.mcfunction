@@ -1,4 +1,4 @@
-#generate
+#gen
 function #terraingen:gen
 
 #worldsize

@@ -1,7 +1,8 @@
+#vectors
 function terraingen:perlin/getnodevectors
-#checked
 
+#get noise result
 function terraingen:perlin/dotproducts
-#
 
+#bogan
 function terraingen:perlin/interpolate
